@@ -3,255 +3,389 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Spoton | حلول التصميم والتنفيذ والهوية التجارية</title>
-  <meta name="description" content="Spoton شركة سعودية متخصصة في تصميم وتنفيذ الواجهات الخارجية والديكورات الداخلية والمعارض واللوحات الإرشادية والهوية التجارية في جميع مناطق المملكة.">
-  <meta name="theme-color" content="#141619">
+  <title>Spoton | اللوحات · الديكورات · الهوردنق</title>
+  <meta name="description" content="Spoton شركة سعودية متخصصة في تصميم وتنفيذ اللوحات والديكورات الداخلية والهوردنق (سواتر المشاريع) من الفكرة حتى التركيب في جميع مناطق المملكة.">
+  <meta name="theme-color" content="#0b0c0e">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ar_SA">
-  <meta property="og:title" content="Spoton | حلول التصميم والتنفيذ والهوية التجارية">
-  <meta property="og:description" content="نحوّل الأفكار إلى واقع ملموس يترك أثرًا — من التصميم حتى التركيب في جميع مناطق المملكة.">
-  <link rel="alternate" hreflang="ar" href="index.html">
-  <link rel="alternate" hreflang="en" href="en/index.html">
+  <meta property="og:title" content="Spoton | اللوحات · الديكورات · الهوردنق">
+  <meta property="og:description" content="نحوّل الأفكار إلى واقع ملموس يترك أثرًا — من التصميم حتى التركيب.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='%230db2d9'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Inter:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/Palestine-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="assets/styles.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <a class="skip" href="#main">انتقل إلى المحتوى</a>
 
-  <header class="site-header">
-    <nav class="container nav" aria-label="القائمة الرئيسية">
-      <a class="logo" href="#top" aria-label="Spoton — الصفحة الرئيسية"><span class="dot"></span><span>spot<b>on</b></span></a>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#services">خدماتنا</a></li>
-        <li><a href="#work">أعمالنا</a></li>
-        <li><a href="#clients">عملاؤنا</a></li>
-        <li><a href="#contact">تواصل معنا</a></li>
-      </ul>
-      <div class="nav-actions">
-        <a class="lang" href="en/index.html" hreflang="en" lang="en">EN</a>
-        <a class="btn btn-primary btn-sm" href="https://wa.me/966554342450" target="_blank" rel="noopener">اطلب عرض سعر</a>
-        <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="فتح القائمة">
-          <svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
-      </div>
-    </nav>
+  <div class="curtain" aria-hidden="true">
+    <span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span><span style="--i:4"></span>
+    <div class="curtain-logo"><span class="logo"><span class="dot"></span><span>spot<b>on</b></span></span><div class="curtain-bar"></div></div>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="hdr">
+    <div class="container hdr-inner">
+      <a class="logo" href="index.html" aria-label="Spoton — الرئيسية"><span class="dot"></span><span>spot<b>on</b></span></a>
+      <nav class="nav" aria-label="القائمة الرئيسية">
+        <ul>
+          <li><a class="nav-link" href="index.html" aria-current="page">الرئيسية</a></li>
+          <li class="has-drop">
+            <button class="nav-link" type="button" aria-expanded="false" aria-controls="drop-services">تخصصاتنا
+              <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="drop" id="drop-services">
+              <a class="drop-item" href="signage.html"><img src="assets/work/signage/s01.jpg" alt=""><span><b>اللوحات</b><small>حروف مضيئة، واجهات، نيون، وأنظمة إرشاد</small></span><svg viewBox="0 0 24 24" class="ico arr" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="drop-item" href="decor.html"><img src="assets/work/decor/d03.jpg" alt=""><span><b>الديكورات</b><small>تكسيات، قواطع، كاونترات، ونجارة حسب الطلب</small></span><svg viewBox="0 0 24 24" class="ico arr" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <a class="drop-item" href="hoarding.html"><img src="assets/work/hoarding/h05.jpg" alt=""><span><b>الهوردنق</b><small>سواتر مواقع البناء والفعاليات بهوية المشروع</small></span><svg viewBox="0 0 24 24" class="ico arr" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </li>
+          <li><a class="nav-link" href="#work">أعمالنا</a></li>
+          <li><a class="nav-link" href="#about">من نحن</a></li>
+          <li><a class="nav-link" href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-cyan btn-sm hdr-cta" href="https://wa.me/966554342450" target="_blank" rel="noopener">اطلب عرض سعر</a>
+      <button class="burger" type="button" aria-controls="mnav" aria-expanded="false" aria-label="فتح القائمة"><span></span><span></span></button>
+    </div>
   </header>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="container">
-        <div class="hero-grid">
-          <div>
-            <span class="eyebrow">تصميم · تنفيذ · هوية تجارية</span>
-            <h1>نحوّل الأفكار إلى <em>واقع ملموس</em> يترك أثرًا</h1>
-            <p class="lead">حلول متكاملة في التصميم والتنفيذ والهوية التجارية للمنشآت والأعمال، من الفكرة حتى التركيب في جميع مناطق المملكة.</p>
-            <div class="hero-ctas">
-              <a class="btn btn-primary" href="https://wa.me/966554342450" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1.1-4.2A8 8 0 1 1 20 12Z"/></svg>
-                ابدأ مشروعك معنا
-              </a>
-              <a class="btn btn-ghost" href="#work">شاهد أعمالنا</a>
-            </div>
-          </div>
-          <div class="hero-media">
-            <img class="tall" src="assets/work/expo-arch.jpg" width="576" height="1024" alt="جناح معرض بتصميم معماري مستوحى من الطراز التراثي">
-            <img src="assets/work/facade-costa.jpg" width="1024" height="768" alt="واجهة خارجية لفرع كوستا كافي بتكسية مزخرفة">
-            <img src="assets/work/expo-wood.jpg" width="1280" height="960" alt="جناح معرض بواجهات خشبية وإضاءة ليلية">
-          </div>
-        </div>
+  <div class="mnav" id="mnav">
+    <div class="mnav-strips" aria-hidden="true"><span style="--i:0"></span><span style="--i:1"></span><span style="--i:2"></span><span style="--i:3"></span></div>
+    <div class="mnav-body">
+      <ol>
+        <li style="--i:0"><a href="index.html"><small>01</small>الرئيسية</a></li>
+        <li style="--i:1"><a href="signage.html"><small>02</small>اللوحات</a></li>
+        <li style="--i:2"><a href="decor.html"><small>03</small>الديكورات</a></li>
+        <li style="--i:3"><a href="hoarding.html"><small>04</small>الهوردنق</a></li>
+        <li style="--i:4"><a href="#contact"><small>05</small>تواصل معنا</a></li>
+      </ol>
+      <div class="mnav-foot">
+        <a href="tel:+966554342450" dir="ltr">+966 55 434 2450</a>
+        <a href="mailto:tqabbish@ahwazllc.com">tqabbish@ahwazllc.com</a>
+        <span>الرياض · جميع مناطق المملكة</span>
+      </div>
+    </div>
+  </div>
 
-        <div class="stats">
-          <div class="stat reveal"><div class="num">120<span>+</span></div><div class="label">فرعًا نُفّذت لبنك الرياض</div></div>
-          <div class="stat reveal"><div class="num">35<span>+</span></div><div class="label">فرعًا لليدر إكسبرس</div></div>
-          <div class="stat reveal"><div class="num">30<span>+</span></div><div class="label">فرعًا لشيري</div></div>
-          <div class="stat reveal"><div class="num">19<span>+</span></div><div class="label">فرعًا لكوستا كافي</div></div>
+  <nav class="side-dots" aria-label="أقسام الصفحة">
+    <a href="#hero" data-label="البداية" aria-label="البداية"></a>
+    <a href="#about" data-label="من نحن" aria-label="من نحن"></a>
+    <a href="#services" data-label="تخصصاتنا" aria-label="تخصصاتنا"></a>
+    <a href="#work" data-label="أعمالنا" aria-label="أعمالنا"></a>
+    <a href="#process" data-label="كيف نعمل" aria-label="كيف نعمل"></a>
+    <a href="#contact" data-label="تواصل" aria-label="تواصل"></a>
+  </nav>
+
+  <div class="side-actions">
+    <a class="side-btn wa" href="https://wa.me/966554342450" target="_blank" rel="noopener" aria-label="واتساب">
+      <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1.1-4.2A8 8 0 1 1 20 12Z"/></svg><span class="tip">راسلنا على واتساب</span>
+    </a>
+    <a class="side-btn" href="tel:+966554342450" aria-label="اتصال">
+      <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 4h3.5l2 5-2.5 1.5a11 11 0 0 0 5.5 5.5L15 13.5l5 2V19a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><span class="tip">اتصل بنا</span>
+    </a>
+    <button class="side-btn to-top" type="button" aria-label="العودة للأعلى">
+      <svg class="ring" viewBox="0 0 54 54" aria-hidden="true"><circle cx="27" cy="27" r="25"/></svg>
+      <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg><span class="tip">للأعلى</span>
+    </button>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="container hero-head">
+        <div>
+          <p class="kicker">اللوحات · الديكورات · الهوردنق</p>
+          <h1 class="display split">نحوّل الأفكار إلى <span class="accent">واقع ملموس</span> يترك أثرًا</h1>
+        </div>
+        <div class="hero-side reveal">
+          <p class="lead">Spoton شركة سعودية تصمم وتنفّذ اللوحات والديكورات والهوردنق للمنشآت والأعمال، من الفكرة حتى التركيب، في جميع مناطق المملكة.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-cyan magnetic" href="https://wa.me/966554342450" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1.1-4.2A8 8 0 1 1 20 12Z"/></svg>ابدأ مشروعك
+            </a>
+            <a class="btn magnetic" href="#work">شاهد أعمالنا</a>
+          </div>
         </div>
       </div>
+
+      <div class="panels">
+        <a class="panel" href="signage.html">
+          <img src="assets/work/signage/s02.jpg" width="960" height="1280" alt="حروف مضيئة على واجهة مبنى ليلًا">
+          <span class="panel-num">01</span>
+          <span class="panel-body">
+            <span class="panel-title">اللوحات</span>
+            <span class="panel-desc">حروف بارزة مضيئة، لوحات واجهات، نيون، وأنظمة إرشاد متكاملة.</span>
+            <span class="panel-more">اكتشف المشاريع <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </span>
+        </a>
+        <a class="panel" href="decor.html">
+          <img src="assets/work/decor/d01.jpg" width="1024" height="768" alt="غرفة ملابس بتشطيبات خشبية وإضاءة مخفية">
+          <span class="panel-num">02</span>
+          <span class="panel-body">
+            <span class="panel-title">الديكورات</span>
+            <span class="panel-desc">تكسيات، قواطع زجاجية، كاونترات، ونجارة مصنّعة حسب الطلب.</span>
+            <span class="panel-more">اكتشف المشاريع <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </span>
+        </a>
+        <a class="panel" href="hoarding.html">
+          <img src="assets/work/hoarding/h01.jpg" width="1280" height="960" alt="ساتر موقع إنشاءات على طريق رئيسي">
+          <span class="panel-num">03</span>
+          <span class="panel-body">
+            <span class="panel-title">الهوردنق</span>
+            <span class="panel-desc">سواتر مواقع البناء والفعاليات، تُكسى بهوية المشروع وتلفت الأنظار.</span>
+            <span class="panel-more">اكتشف المشاريع <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </span>
+        </a>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span>مرّر للأسفل</span></div>
     </section>
 
-    <section class="bg-paper" id="about">
-      <div class="container about-grid">
-        <div class="section-head reveal">
-          <span class="eyebrow">من نحن</span>
-          <h2>شريككم في صناعة حضور أقوى</h2>
-          <p>Spoton شركة سعودية متخصصة في التصميم والتنفيذ وتقديم الحلول المتكاملة للمنشآت والأعمال. نجمع بين الإبداع والتقنية والخبرة التنفيذية لنصنع تجارب متسقة، عملية، ومرتبطة بأهداف العميل.</p>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="word">اللوحات</span><svg class="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0Z"/></svg>
+        <span class="word fill">الديكورات</span><svg class="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0Z"/></svg>
+        <span class="word">الهوردنق</span><svg class="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0Z"/></svg>
+        <span class="word">اللوحات</span><svg class="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0Z"/></svg>
+        <span class="word fill">الديكورات</span><svg class="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0Z"/></svg>
+        <span class="word">الهوردنق</span><svg class="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0Z"/></svg>
+      </div>
+    </div>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <p class="kicker">من نحن</p>
+            <h2 class="display-2 split">شريككم في صناعة <span class="accent">حضور أقوى</span></h2>
+          </div>
+          <div class="reveal">
+            <p class="lead">Spoton شركة سعودية متخصصة في التصميم والتنفيذ. نجمع بين الإبداع والخبرة التنفيذية لنصنع حضورًا متسقًا وعمليًا ومرتبطًا بأهداف العميل، ونركّز خبرتنا في ثلاثة مجالات: اللوحات، والديكورات، والهوردنق.</p>
+            <p class="lead" style="margin-top:18px">فريق واحد يتولى مشروعكم من الفكرة والتصميم إلى التصنيع والتركيب والتسليم، في أي منطقة من مناطق المملكة.</p>
+          </div>
         </div>
-        <div class="pillars">
-          <div class="pillar reveal"><span class="n">01</span><h3>إبداع قابل للتنفيذ</h3><p>نبتكر تصاميم جميلة وعملية تتحول إلى نتائج ملموسة على أرض الواقع.</p></div>
-          <div class="pillar reveal"><span class="n">02</span><h3>إدارة متكاملة</h3><p>من الفكرة والتصميم إلى التصنيع والتركيب والتسليم.</p></div>
-          <div class="pillar reveal"><span class="n">03</span><h3>انتشار في المملكة</h3><p>قدرة على تنفيذ المشاريع في جميع مناطق المملكة.</p></div>
-          <div class="pillar reveal"><span class="n">04</span><h3>شراكة طويلة المدى</h3><p>نبني علاقات مستمرة مع عملائنا عبر الجودة والالتزام.</p></div>
+        <div class="stats">
+          <div class="stat"><div class="stat-num"><span data-count="120">120</span><span class="plus">+</span></div><div class="stat-label">فرعًا نُفّذت لبنك الرياض</div></div>
+          <div class="stat"><div class="stat-num"><span data-count="35">35</span><span class="plus">+</span></div><div class="stat-label">فرعًا لليدر إكسبرس</div></div>
+          <div class="stat"><div class="stat-num"><span data-count="30">30</span><span class="plus">+</span></div><div class="stat-label">فرعًا لشيري</div></div>
+          <div class="stat"><div class="stat-num"><span data-count="19">19</span><span class="plus">+</span></div><div class="stat-label">فرعًا لكوستا كافي</div></div>
         </div>
       </div>
     </section>
 
     <section id="services">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">حلولنا</span>
-          <h2>منظومة خدمات متكاملة</h2>
-          <p>فريق واحد يتولى مشروعكم من التصميم حتى التركيب، لتصل هويتكم بنفس الجودة إلى كل موقع.</p>
+      <div class="container section-head single" style="padding-top:clamp(40px,6vw,80px)">
+        <div>
+          <p class="kicker">تخصصاتنا</p>
+          <h2 class="display-2 split">ثلاثة تخصصات، وفريق واحد من التصميم <span class="accent">حتى التركيب</span></h2>
         </div>
-        <div class="services">
-          <article class="service reveal">
-            <div class="icon"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6M9 11h.01M15 11h.01"/></svg></div>
-            <h3>الواجهات الخارجية</h3>
-            <p>تصميم وتنفيذ واجهات تعزز الحضور وتوحد تجربة العلامة عبر الفروع.</p>
-          </article>
-          <article class="service reveal">
-            <div class="icon"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="M5 11V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v3M3 13a2 2 0 0 1 4 0v2h10v-2a2 2 0 0 1 4 0v5H3Zm3 5v2m12-2v2"/></svg></div>
-            <h3>الديكورات الداخلية</h3>
-            <p>مساحات داخلية تعكس شخصية العلامة وتخدم الوظيفة وتجربة الزائر.</p>
-          </article>
-          <article class="service reveal">
-            <div class="icon"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4M7 8h6M7 11h10"/></svg></div>
-            <h3>المعارض والمؤتمرات</h3>
-            <p>تصميم وتنفيذ أجنحة وتجارب تفاعلية تلفت الانتباه وتدعم أهداف المشاركة.</p>
-          </article>
-          <article class="service reveal">
-            <div class="icon"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="M12 3v18M12 5h6.5L21 7.5 18.5 10H12M12 13H5.5L3 15.5 5.5 18H12"/></svg></div>
-            <h3>اللوحات الإرشادية</h3>
-            <p>أنظمة توجيه وهوية مكانية واضحة، من التخطيط حتى التركيب.</p>
-          </article>
-          <article class="service reveal">
-            <div class="icon"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8S10.5 3.5 8 4.5 9.5 8 12 8Zm0 0s1.5-4.5 4-3.5S14.5 8 12 8Z"/></svg></div>
-            <h3>الهوية والمواد الدعائية</h3>
-            <p>هدايا دعائية ومواد مطبوعة وحلول تعزز حضور العلامة.</p>
-          </article>
-          <article class="service reveal">
-            <div class="icon"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10.5 5-3v9l-5-3Z"/></svg></div>
-            <h3>الإنتاج الإبداعي</h3>
-            <p>إنتاج سينمائي وعروض مواهب ومحتوى بصري يخدم الرسالة.</p>
-          </article>
+      </div>
+
+      <article class="spec" id="spec-signage">
+        <div class="container spec-grid">
+          <div class="spec-media">
+            <div class="curtain-img"><img src="assets/work/signage/s09.jpg" width="780" height="1040" loading="lazy" alt="شعار جداري بإضاءة محيطية على تكسية خشبية" data-parallax="0.06"></div>
+            <div class="curtain-img mini"><img src="assets/work/signage/s01.jpg" width="1024" height="768" loading="lazy" alt="لوحة إكس-سايت المضيئة ليلًا"></div>
+          </div>
+          <div class="spec-text">
+            <span class="spec-num" aria-hidden="true">01</span>
+            <h3 class="display-2 split">اللوحات</h3>
+            <p class="spec-tag reveal">لوحات تُعرّف بكم قبل أن تتحدثوا</p>
+            <p class="lead reveal">نصمم ونصنّع ونركّب اللوحات الخارجية والداخلية بمختلف أنواعها، من الحروف البارزة المضيئة إلى أنظمة الإرشاد المتكاملة، بخامات مختارة وتشطيب يليق بعلامتكم.</p>
+            <ul class="spec-list reveal">
+              <li>الحروف البارزة المضيئة</li><li>لوحات الواجهات</li><li>الشعارات المعدنية والذهبية</li>
+              <li>لوحات النيون</li><li>اللوحات الإرشادية</li><li>لوحات المواقف والمباني</li>
+            </ul>
+            <a class="link-arrow reveal" href="signage.html">شاهد مشاريع اللوحات <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="spec flip" id="spec-decor">
+        <div class="container spec-grid">
+          <div class="spec-media">
+            <div class="curtain-img"><img src="assets/work/decor/d08.jpg" width="960" height="1280" loading="lazy" alt="مكتب استقبال من الرخام الأسود" data-parallax="0.06"></div>
+            <div class="curtain-img mini"><img src="assets/work/decor/d03.jpg" width="1024" height="768" loading="lazy" alt="كاونتر استقبال بإضاءة سفلية"></div>
+          </div>
+          <div class="spec-text">
+            <span class="spec-num" aria-hidden="true">02</span>
+            <h3 class="display-2 split">الديكورات</h3>
+            <p class="spec-tag reveal">مساحات تعكس هويتكم وتخدم يومكم</p>
+            <p class="lead reveal">ننفّذ أعمال الديكور الداخلي للمكاتب والمحلات والمطاعم والمساكن: تكسيات الجدران، والقواطع الزجاجية، والكاونترات، والنجارة والأثاث المصنّع حسب الطلب.</p>
+            <ul class="spec-list reveal">
+              <li>تكسيات الخشب والرخام</li><li>القواطع الزجاجية والأبواب</li><li>كاونترات ومكاتب الاستقبال</li>
+              <li>الأسقف والإضاءة</li><li>النجارة والأثاث حسب الطلب</li><li>تجهيز المحلات والمطاعم</li>
+            </ul>
+            <a class="link-arrow reveal" href="decor.html">شاهد مشاريع الديكورات <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="spec" id="spec-hoarding">
+        <div class="container spec-grid">
+          <div class="spec-media">
+            <div class="curtain-img"><img src="assets/work/hoarding/h02.jpg" width="960" height="1280" loading="lazy" alt="ساتر معدني ممتد بطول موقع مشروع" data-parallax="0.06"></div>
+            <div class="curtain-img mini"><img src="assets/work/hoarding/h06.jpg" width="1280" height="960" loading="lazy" alt="أقواس مضاءة لمدخل فعالية"></div>
+          </div>
+          <div class="spec-text">
+            <span class="spec-num" aria-hidden="true">03</span>
+            <h3 class="display-2 split">الهوردنق</h3>
+            <p class="spec-tag reveal">سواتر تحوّل موقع العمل إلى واجهة لافتة</p>
+            <p class="lead reveal">نصمم وننفّذ سواتر المشاريع لمواقع البناء والفعاليات: هياكل متينة تُكسى بهوية المشروع، تحمي الموقع وتحوّل محيطه إلى مساحة تُعرّف بالمشروع قبل افتتاحه.</p>
+            <ul class="spec-list reveal">
+              <li>سواتر مواقع البناء</li><li>سواتر الفعاليات والمهرجانات</li><li>الطباعة والتغليف بالهوية</li>
+              <li>الهياكل المعدنية والتثبيت</li><li>المجسّمات والجداريات</li><li>الإضاءة الليلية</li>
+            </ul>
+            <a class="link-arrow reveal" href="hoarding.html">شاهد مشاريع الهوردنق <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="work" style="background:var(--bg-2)">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">أعمالنا</p>
+            <h2 class="display-2 split">أعمال تُرى <span class="accent">وتُقاس نتائجها</span></h2>
+          </div>
+          <div class="filters reveal" role="group" aria-label="تصفية الأعمال">
+            <button class="chip" type="button" data-filter="all" aria-pressed="true">الكل<sup>12</sup></button>
+            <button class="chip" type="button" data-filter="signage" aria-pressed="false">اللوحات<sup>04</sup></button>
+            <button class="chip" type="button" data-filter="decor" aria-pressed="false">الديكورات<sup>04</sup></button>
+            <button class="chip" type="button" data-filter="hoarding" aria-pressed="false">الهوردنق<sup>04</sup></button>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="tile" type="button" data-cat="signage"><img src="assets/work/signage/s01.jpg" width="1024" height="768" loading="lazy" alt="لوحة إكس-سايت المضيئة"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>اللوحات</small><span>لوحة إكس-سايت المضيئة</span></span></button>
+          <button class="tile" type="button" data-cat="hoarding"><img src="assets/work/hoarding/h05.jpg" width="1280" height="960" loading="lazy" alt="ساتر فعالية بأقواس تراثية"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>الهوردنق</small><span>ساتر فعالية بأقواس تراثية</span></span></button>
+          <button class="tile" type="button" data-cat="decor"><img src="assets/work/decor/d03.jpg" width="1024" height="768" loading="lazy" alt="كاونتر استقبال بإضاءة سفلية"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>الديكورات</small><span>كاونتر استقبال بإضاءة سفلية</span></span></button>
+          <button class="tile" type="button" data-cat="signage"><img src="assets/work/signage/s05.jpg" width="1024" height="768" loading="lazy" alt="حروف ذهبية بارزة"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>اللوحات</small><span>حروف ذهبية بارزة</span></span></button>
+          <button class="tile" type="button" data-cat="hoarding"><img src="assets/work/hoarding/h09.jpg" width="960" height="1280" loading="lazy" alt="ساتر بتصميم فني مرسوم"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>الهوردنق</small><span>ساتر بتصميم فني مرسوم</span></span></button>
+          <button class="tile" type="button" data-cat="decor"><img src="assets/work/decor/d04.jpg" width="563" height="741" loading="lazy" alt="درج بشرائح خشبية"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>الديكورات</small><span>درج بشرائح خشبية</span></span></button>
+          <button class="tile" type="button" data-cat="signage"><img src="assets/work/signage/s11.jpg" width="1280" height="960" loading="lazy" alt="حروف معدنية بخط يدوي"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>اللوحات</small><span>حروف معدنية بخط يدوي</span></span></button>
+          <button class="tile" type="button" data-cat="hoarding"><img src="assets/work/hoarding/h08.jpg" width="1280" height="960" loading="lazy" alt="واجهة فعالية بشخصيات مجسّمة"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>الهوردنق</small><span>واجهة فعالية بشخصيات مجسّمة</span></span></button>
+          <button class="tile" type="button" data-cat="decor"><img src="assets/work/decor/d10.jpg" width="960" height="1280" loading="lazy" alt="تكسيات خشبية كلاسيكية"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>الديكورات</small><span>تكسيات خشبية كلاسيكية</span></span></button>
+          <button class="tile" type="button" data-cat="signage"><img src="assets/work/signage/s15.jpg" width="591" height="1280" loading="lazy" alt="نظام إرشاد لمواقف السيارات"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>اللوحات</small><span>نظام إرشاد لمواقف السيارات</span></span></button>
+          <button class="tile" type="button" data-cat="hoarding"><img src="assets/work/hoarding/h03.jpg" width="960" height="1280" loading="lazy" alt="هيكل ساتر مرتفع لموقع مشروع"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>الهوردنق</small><span>هيكل ساتر مرتفع لموقع مشروع</span></span></button>
+          <button class="tile" type="button" data-cat="decor"><img src="assets/work/decor/d15.jpg" width="1024" height="768" loading="lazy" alt="ديكور مطعم بجدارية خط عربي"><span class="tile-plus" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico"><path d="M12 5v14M5 12h14"/></svg></span><span class="tile-cap"><small>الديكورات</small><span>ديكور مطعم بجدارية خط عربي</span></span></button>
+        </div>
+        <div class="gallery-more reveal">
+          <a class="btn" href="signage.html">كل مشاريع اللوحات</a>
+          <a class="btn" href="decor.html">كل مشاريع الديكورات</a>
+          <a class="btn" href="hoarding.html">كل مشاريع الهوردنق</a>
         </div>
       </div>
     </section>
 
-    <section class="bg-ink" id="process">
+    <section class="section" id="process">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">كيف نعمل</span>
-          <h2>نصمم الأثر قبل أن نصمم الشكل</h2>
-          <p>ننسق بين فرق التصميم والتنفيذ لضمان نتيجة متسقة في كل موقع.</p>
+        <div class="section-head">
+          <div>
+            <p class="kicker">كيف نعمل</p>
+            <h2 class="display-2 split">نصمم الأثر قبل أن <span class="accent">نصمم الشكل</span></h2>
+          </div>
+          <p class="lead reveal">ننسّق بين فرق التصميم والتصنيع والتركيب لضمان نتيجة متسقة في كل موقع، مهما كان عدد الفروع أو بُعد المدينة.</p>
         </div>
         <ol class="steps">
-          <li class="step reveal"><span class="n">01</span><h3>الفكرة والتصميم</h3><p>نفهم أهدافكم وهويتكم، ونحوّلها إلى تصاميم واضحة قابلة للتنفيذ.</p></li>
-          <li class="step reveal"><span class="n">02</span><h3>التصنيع</h3><p>ننتج كل عنصر بمواصفات دقيقة ومواد تناسب الاستخدام والموقع.</p></li>
-          <li class="step reveal"><span class="n">03</span><h3>التركيب</h3><p>فرق تنفيذ تصل إلى جميع مناطق المملكة وتلتزم بالجدول الزمني.</p></li>
-          <li class="step reveal"><span class="n">04</span><h3>التسليم والمتابعة</h3><p>نسلّم المشروع جاهزًا، ونبقى شريككم في ما بعده.</p></li>
+          <li class="step"><span class="step-num">01</span><div class="step-line"></div><h3>الفكرة والتصميم</h3><p>نفهم أهدافكم وهويتكم، ونحوّلها إلى تصاميم واضحة قابلة للتنفيذ.</p></li>
+          <li class="step"><span class="step-num">02</span><div class="step-line"></div><h3>التصنيع</h3><p>ننتج كل عنصر بمواصفات دقيقة ومواد تناسب الاستخدام والموقع.</p></li>
+          <li class="step"><span class="step-num">03</span><div class="step-line"></div><h3>التركيب</h3><p>فرق تنفيذ تصل إلى جميع مناطق المملكة وتلتزم بالجدول الزمني.</p></li>
+          <li class="step"><span class="step-num">04</span><div class="step-line"></div><h3>التسليم والمتابعة</h3><p>نسلّم المشروع جاهزًا، ونبقى شريككم في ما بعده.</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="bg-paper" id="work">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">مختارات من أعمالنا</span>
-          <h2>أعمال تُرى وتُقاس نتائجها</h2>
+    <section id="clients" style="padding-bottom:clamp(90px,10vw,140px)">
+      <div class="container section-head single">
+        <div>
+          <p class="kicker">عملاؤنا وشركاء النجاح</p>
+          <h2 class="display-2 split">ثقة تُبنى <span class="accent">بالمشاريع</span></h2>
         </div>
-        <div class="filters" role="group" aria-label="تصفية الأعمال">
-          <button class="chip" type="button" data-filter="all" aria-pressed="true">الكل</button>
-          <button class="chip" type="button" data-filter="facade" aria-pressed="false">الواجهات</button>
-          <button class="chip" type="button" data-filter="signage" aria-pressed="false">اللوحات والإرشاد</button>
-          <button class="chip" type="button" data-filter="expo" aria-pressed="false">المعارض</button>
-          <button class="chip" type="button" data-filter="interior" aria-pressed="false">الديكور الداخلي</button>
-          <button class="chip" type="button" data-filter="kiosk" aria-pressed="false">الأكشاك</button>
-        </div>
-        <div class="gallery">
-          <figure data-cat="facade"><button type="button"><img src="assets/work/facade-costa.jpg" width="1024" height="768" loading="lazy" alt="واجهة فرع كوستا كافي بتكسية مزخرفة"></button><figcaption>واجهة فرع كوستا كافي</figcaption></figure>
-          <figure data-cat="expo"><button type="button"><img src="assets/work/expo-wood.jpg" width="1280" height="960" loading="lazy" alt="جناح معرض بواجهات خشبية"></button><figcaption>جناح معرض بواجهات خشبية</figcaption></figure>
-          <figure data-cat="signage"><button type="button"><img src="assets/work/sign-xcite.jpg" width="1024" height="768" loading="lazy" alt="لوحة إكس-سايت المضيئة ليلًا"></button><figcaption>لوحة إكس-سايت المضيئة</figcaption></figure>
-          <figure data-cat="interior"><button type="button"><img src="assets/work/interior-dressing.jpg" width="1024" height="768" loading="lazy" alt="غرفة ملابس بتشطيبات وإضاءة مخفية"></button><figcaption>غرفة ملابس بتشطيبات خاصة</figcaption></figure>
-          <figure data-cat="facade"><button type="button"><img src="assets/work/facade-chery.jpg" width="768" height="1024" loading="lazy" alt="واجهة معرض شيري"></button><figcaption>واجهة معرض شيري</figcaption></figure>
-          <figure data-cat="expo"><button type="button"><img src="assets/work/expo-arabio.jpg" width="768" height="1024" loading="lazy" alt="جناح معرض بإضاءة مدمجة"></button><figcaption>جناح معرض بإضاءة مدمجة</figcaption></figure>
-          <figure data-cat="signage"><button type="button"><img src="assets/work/sign-asharq.jpg" width="960" height="1280" loading="lazy" alt="لوحة حروف مضيئة على واجهة مبنى"></button><figcaption>لوحة حروف مضيئة</figcaption></figure>
-          <figure data-cat="kiosk"><button type="button"><img src="assets/work/kiosk-stc.jpg" width="768" height="1024" loading="lazy" alt="كشك عرض تفاعلي بإضاءة"></button><figcaption>كشك عرض تفاعلي</figcaption></figure>
-          <figure data-cat="facade"><button type="button"><img src="assets/work/facade-riyad-bank.jpg" width="576" height="1024" loading="lazy" alt="واجهة أحد فروع بنك الرياض"></button><figcaption>فرع بنك الرياض</figcaption></figure>
-          <figure data-cat="expo"><button type="button"><img src="assets/work/expo-arch.jpg" width="576" height="1024" loading="lazy" alt="جناح معرض بتصميم معماري تراثي"></button><figcaption>جناح بتصميم معماري تراثي</figcaption></figure>
-          <figure data-cat="signage"><button type="button"><img src="assets/work/wayfinding-parking.jpg" width="591" height="1280" loading="lazy" alt="نظام إرشاد في مواقف السيارات"></button><figcaption>نظام إرشاد لمواقف السيارات</figcaption></figure>
-          <figure data-cat="interior"><button type="button"><img src="assets/work/interior-living.jpg" width="768" height="1024" loading="lazy" alt="مجلس بتكسيات خشبية"></button><figcaption>مجلس بتكسيات خشبية</figcaption></figure>
-          <figure data-cat="signage"><button type="button"><img src="assets/work/sign-braira.jpg" width="768" height="1024" loading="lazy" alt="لوحة فندق بريرا"></button><figcaption>لوحة فنادق بريرا</figcaption></figure>
-          <figure data-cat="expo"><button type="button"><img src="assets/work/expo-trellah.jpg" width="576" height="1024" loading="lazy" alt="جناح معرض بهوية العميل"></button><figcaption>جناح معرض بهوية العميل</figcaption></figure>
-          <figure data-cat="facade"><button type="button"><img src="assets/work/facade-patchi.jpg" width="1280" height="960" loading="lazy" alt="واجهة متجر تجاري"></button><figcaption>واجهة متجر تجاري</figcaption></figure>
-          <figure data-cat="signage"><button type="button"><img src="assets/work/sign-fastfit.jpg" width="1024" height="768" loading="lazy" alt="لوحة واجهة مضيئة لنادٍ رياضي"></button><figcaption>لوحة واجهة مضيئة</figcaption></figure>
-          <figure data-cat="kiosk"><button type="button"><img src="assets/work/kiosk-salam.jpg" width="563" height="1000" loading="lazy" alt="كشك عرض تجاري بشرائح خشبية"></button><figcaption>كشك عرض تجاري</figcaption></figure>
-          <figure data-cat="expo"><button type="button"><img src="assets/work/expo-salonpas.jpg" width="768" height="1024" loading="lazy" alt="جناح معرض تجاري"></button><figcaption>جناح معرض تجاري</figcaption></figure>
-          <figure data-cat="interior"><button type="button"><img src="assets/work/interior-stair.jpg" width="563" height="741" loading="lazy" alt="درج بتصميم خاص"></button><figcaption>درج بتصميم خاص</figcaption></figure>
-          <figure data-cat="signage"><button type="button"><img src="assets/work/sign-dur.jpg" width="1024" height="576" loading="lazy" alt="لوحة حروف بارزة على مبنى"></button><figcaption>لوحة حروف بارزة</figcaption></figure>
+      </div>
+      <div class="marquee reverse clients-band" aria-label="عملاؤنا">
+        <div class="marquee-track">
+          <span class="client">بنك الرياض<small>أكثر من 120 فرعًا</small></span><span class="sep"></span>
+          <span class="client">ليدر إكسبرس<small>أكثر من 35 فرعًا</small></span><span class="sep"></span>
+          <span class="client">شيري<small>أكثر من 30 فرعًا</small></span><span class="sep"></span>
+          <span class="client">كوستا كافي<small>أكثر من 19 فرعًا</small></span><span class="sep"></span>
+          <span class="client">البنك المركزي السعودي</span><span class="sep"></span>
+          <span class="client">الهيئة العامة للغذاء والدواء</span><span class="sep"></span>
+          <span class="client">X-cite</span><span class="sep"></span>
+          <span class="client">جرير</span><span class="sep"></span>
+          <span class="client">فنادق بريرا</span><span class="sep"></span>
+          <span class="client">الحسين توب أب</span><span class="sep"></span>
+          <span class="client" aria-hidden="true">بنك الرياض<small>أكثر من 120 فرعًا</small></span><span class="sep"></span>
+          <span class="client" aria-hidden="true">ليدر إكسبرس<small>أكثر من 35 فرعًا</small></span><span class="sep"></span>
+          <span class="client" aria-hidden="true">شيري<small>أكثر من 30 فرعًا</small></span><span class="sep"></span>
+          <span class="client" aria-hidden="true">كوستا كافي<small>أكثر من 19 فرعًا</small></span><span class="sep"></span>
+          <span class="client" aria-hidden="true">البنك المركزي السعودي</span><span class="sep"></span>
+          <span class="client" aria-hidden="true">الهيئة العامة للغذاء والدواء</span><span class="sep"></span>
+          <span class="client" aria-hidden="true">X-cite</span><span class="sep"></span>
+          <span class="client" aria-hidden="true">جرير</span><span class="sep"></span>
+          <span class="client" aria-hidden="true">فنادق بريرا</span><span class="sep"></span>
+          <span class="client" aria-hidden="true">الحسين توب أب</span><span class="sep"></span>
         </div>
       </div>
     </section>
 
-    <section id="clients">
+    <section class="cta" id="contact">
+      <div class="cta-bg"><img src="assets/work/hoarding/h06.jpg" width="1280" height="960" loading="lazy" alt="" data-parallax="0.12"></div>
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">عملاؤنا وشركاء النجاح</span>
-          <h2>ثقة تُبنى بالمشاريع</h2>
-        </div>
-        <ul class="clients reveal">
-          <li class="client">بنك الرياض<small>أكثر من 120 فرعًا</small></li>
-          <li class="client">ليدر إكسبرس<small>أكثر من 35 فرعًا</small></li>
-          <li class="client">شيري<small>أكثر من 30 فرعًا</small></li>
-          <li class="client">كوستا كافي<small>أكثر من 19 فرعًا</small></li>
-          <li class="client">البنك المركزي السعودي</li>
-          <li class="client">الهيئة العامة للغذاء والدواء</li>
-          <li class="client">X-سايت</li>
-          <li class="client">جرير</li>
-          <li class="client">فنادق بريرا</li>
-          <li class="client">الحسين توب أب</li>
-        </ul>
-        <p class="clients-note reveal">نؤمن أن أفضل دليل على قدرتنا هو ما ننجزه لعملائنا. نعمل وفق معايير واضحة للجودة، وننسق بين فرق التصميم والتنفيذ لضمان نتيجة متسقة في كل موقع.</p>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container contact-grid">
-        <div class="section-head reveal">
-          <span class="eyebrow">تواصلوا معنا</span>
-          <h2>جاهزون لتحويل رؤيتكم إلى حضور ملموس</h2>
-          <p>أخبرونا عن مشروعكم، وسنعود إليكم بتصور أولي وعرض سعر.</p>
-          <p style="margin-top:28px"><a class="btn btn-primary" href="https://wa.me/966554342450" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1.1-4.2A8 8 0 1 1 20 12Z"/></svg>
-            راسلونا على واتساب
-          </a></p>
-        </div>
-        <div class="contact-cards reveal">
-          <a class="contact-card" href="tel:+966554342450">
-            <span class="icon"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="M5 4h3.5l2 5-2.5 1.5a11 11 0 0 0 5.5 5.5L15 13.5l5 2V19a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
-            <span><small>الهاتف</small><strong dir="ltr">+966 55 434 2450</strong></span>
+        <p class="kicker">تواصلوا معنا</p>
+        <h2 class="display split">جاهزون لتحويل رؤيتكم إلى <span class="accent">حضور ملموس</span></h2>
+        <p class="lead reveal">أخبرونا عن مشروعكم، لوحة أو ديكور أو ساتر موقع، وسنعود إليكم بتصور أولي وعرض سعر.</p>
+        <div class="hero-ctas reveal">
+          <a class="btn btn-cyan magnetic" href="https://wa.me/966554342450" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1.1-4.2A8 8 0 1 1 20 12Z"/></svg>راسلنا على واتساب
           </a>
-          <a class="contact-card" href="mailto:tqabbish@ahwazllc.com">
-            <span class="icon"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></span>
-            <span><small>البريد الإلكتروني</small><strong dir="ltr">tqabbish@ahwazllc.com</strong></span>
-          </a>
-          <div class="contact-card">
-            <span class="icon"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-            <span><small>الموقع</small><strong>الرياض · نخدم جميع مناطق المملكة</strong></span>
-          </div>
+          <a class="btn magnetic" href="tel:+966554342450"><span dir="ltr">+966 55 434 2450</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <a class="logo" href="#top" aria-label="Spoton"><span class="dot"></span><span>spot<b>on</b></span></a>
-      <span class="tagline">Design · Build · Elevate</span>
-      <span>© <span data-year>2026</span> Spoton. جميع الحقوق محفوظة.</span>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a class="logo" href="index.html" aria-label="Spoton"><span class="dot"></span><span>spot<b>on</b></span></a>
+          <p>شركة سعودية متخصصة في تصميم وتنفيذ اللوحات والديكورات والهوردنق، من الفكرة حتى التركيب.</p>
+        </div>
+        <div>
+          <h4>تخصصاتنا</h4>
+          <ul><li><a href="signage.html">اللوحات</a></li><li><a href="decor.html">الديكورات</a></li><li><a href="hoarding.html">الهوردنق</a></li></ul>
+        </div>
+        <div>
+          <h4>الشركة</h4>
+          <ul><li><a href="index.html#about">من نحن</a></li><li><a href="index.html#work">أعمالنا</a></li><li><a href="index.html#process">كيف نعمل</a></li><li><a href="index.html#clients">عملاؤنا</a></li></ul>
+        </div>
+        <div>
+          <h4>تواصل</h4>
+          <ul>
+            <li><a href="tel:+966554342450" dir="ltr">+966 55 434 2450</a></li>
+            <li><a href="mailto:tqabbish@ahwazllc.com">tqabbish@ahwazllc.com</a></li>
+            <li>الرياض · جميع مناطق المملكة</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Spoton. جميع الحقوق محفوظة.</span>
+        <span class="tagline">Design · Build · Elevate</span>
+      </div>
     </div>
   </footer>
 
-  <dialog class="lightbox" aria-label="عرض الصورة">
-    <figure class="lb-figure"><img src="" alt=""><figcaption class="lb-cap"></figcaption></figure>
-    <button class="lb-btn lb-close" type="button" aria-label="إغلاق"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-    <button class="lb-btn lb-prev" type="button" aria-label="الصورة السابقة"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
-    <button class="lb-btn lb-next" type="button" aria-label="الصورة التالية"><svg viewBox="0 0 24 24" class="icon-stroke" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
-  </dialog>
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="عرض المشروع" aria-hidden="true">
+    <div class="lb-bg"></div>
+    <div class="lb-top"><span class="lb-count"></span><button class="lb-btn lb-close" type="button" aria-label="إغلاق"><svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div class="lb-stage"><img alt=""></div>
+    <div class="lb-bottom"><div class="lb-cap"></div></div>
+    <button class="lb-btn lb-nav lb-prev" type="button" aria-label="السابق"><svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+    <button class="lb-btn lb-nav lb-next" type="button" aria-label="التالي"><svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+  </div>
 
   <script src="assets/main.js"></script>
 </body>
