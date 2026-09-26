@@ -80,10 +80,10 @@
   if (reduceMotion || !curtain) {
     revealPage();
   } else {
-    // Lift the curtain once text and fonts are ready; images keep loading behind it.
+    // Lift the curtain once the (self-hosted) headline font is ready; everything else loads behind it.
     const started = performance.now();
-    const fontsReady = document.fonts ? document.fonts.ready : Promise.resolve();
-    const timeout = new Promise((resolve) => setTimeout(resolve, 1500));
+    const fontsReady = document.fonts ? document.fonts.load('40px Palestine').catch(() => {}) : Promise.resolve();
+    const timeout = new Promise((resolve) => setTimeout(resolve, 900));
     Promise.race([fontsReady, timeout]).then(() => {
       const minIntro = firstVisit ? 1000 : 60;
       setTimeout(revealPage, Math.max(0, minIntro - (performance.now() - started)));
@@ -213,7 +213,7 @@
 
   /* ---------- Gallery filters ---------- */
   const tiles = $$('.tile');
-  const chips = $$('.chip');
+  const chips = $$('.filters .chip');
   chips.forEach((chip) => chip.addEventListener('click', () => {
     if (chip.getAttribute('aria-pressed') === 'true') return;
     const filter = chip.dataset.filter;
