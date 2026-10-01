@@ -4,8 +4,8 @@
 // - image (optional): path to a product photo, e.g. 'assets/gifts/mug.jpg' — shown instead of the icon.
 // - min: minimum order quantity.
 window.SPOTON_GIFTS = {
-  whatsapp: '966554342450',
-  email: 'tqabbish@ahwazllc.com',
+  whatsapp: '966569377774',
+  email: 'info@spotonsa.com',
   categories: [
     { id: 'pens', name: 'الأقلام' },
     { id: 'drinkware', name: 'الأكواب والمطارات' },
